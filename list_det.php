@@ -68,7 +68,7 @@
     if ($result->num_rows > 0) {
 
          echo "<br><table border='2'>";
-                echo "<tr><th>Серийный_номер</th><th>Название</th><th>Цена</th><th>Поставщик</th><th>Фото</th>";
+                echo "<tr><th>Серийный_номер</th><th>Название</th><th>Цена, ₽</th><th>Поставщик</th><th>Фото</th>";
                 while ($row = $result->fetch_assoc()) {
                 echo "<tr>";
                 echo "<td>" . $row["Серийный_номер"] . "</td>";

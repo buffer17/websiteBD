@@ -43,7 +43,7 @@
 	 if ($result->num_rows > 0) {
 		 if (isset($_SESSION['code']) && !empty($_SESSION['code'])) {
 			 echo "<br><table border='2'>";
-					echo "<tr><th>Серийный_номер</th><th>Название</th><th>Цена</th><th>Купить</th>";
+					echo "<tr><th>Серийный_номер</th><th>Название</th><th>Цена, ₽</th><th>Купить</th>";
 					while ($row = $result->fetch_assoc()) {
 						 echo "<tr>";
 						 echo "<td>" . $row["Серийный_номер"] . "</td>";
